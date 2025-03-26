@@ -1,0 +1,403 @@
+@import "vars";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+summary::-webkit-details-marker {
+    display: none;
+  }
+  summary {display: block;}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: white;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+
+}
+button {
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.container {
+    padding-left: calc(50% - $widthSite / 2);
+    padding-right: calc(50% - $widthSite / 2);
+}
+
+.header {
+    background: $headerBlock;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+        &__left {
+            display: flex;
+            align-items: center;
+            gap: 41px;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            gap: 42px;
+        }
+        &_btn {
+            border: none;
+        }
+}
+
+.top-head {
+    background: rgb(248, 243, 244);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        &__heading {
+            color: $colorSelectSite;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 29px;
+        }
+}
+
+
+.mainContent {
+    display: flex;
+    gap: 128px;
+    &__leftSide {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 96px;
+    }
+
+    &__product-box {
+        border: 1px solid #EAEAEA;
+        box-shadow: 17px 19px 24px 0px #00000021;
+        width: 650px;
+        display: flex;
+    }
+
+    &__product {
+        display: flex;
+        flex-direction: column;
+        padding: 22px 31px 62px 31px;
+        gap: 6px;
+    }
+
+    &__header {
+        color: rgb(34, 34, 34);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        padding-bottom: 42px;    
+    }
+
+    &__text {
+        font-size: 22px;
+        color: rgb(87, 87, 87);
+        font-weight: 400;
+        line-height: 26px;       
+    }
+
+    &__price:hover {
+        color: $colorSelectSite;
+    }
+
+    &__quantity {
+        width: 44px; 
+        border: 1px solid #EAEAEA;
+        padding: 1px 17px 2px 16px;
+    }
+
+    &__rightSide {
+        padding-top: 113px;
+    }
+
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__header {
+        color: $registerBlockText;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+    }
+
+    &__first {
+        color: rgb(177, 177, 177);
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        padding: 13px 17px 16px 17px;
+        width: 360px;       
+    }
+
+    &__state {
+        color: $registerBlockText;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        width: 360px;
+        padding: 13px 17px 16px 17px;        
+    }
+
+    &__postcode {
+        color: $registerBlockText;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        width: 360px;
+        padding: 13px 17px 16px 17px;        
+    }
+
+    &__btn {
+        border: 1px solid rgb(164, 164, 164);
+        color: rgb(74, 74, 74);
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+        padding: 10px 14px 12px 15px;
+        width: 110px;
+    }
+}
+
+.total {
+padding-top: 58px;
+    &__block {
+        background: #F5F3F3;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__sub {
+        color: rgb(74, 74, 74);
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        padding-top: 39px;
+        padding-right: 31px;
+        padding-left: 218px;   
+    }
+
+    &__subSpan {
+        padding-left: 20px;  
+    }
+
+    &__grand {
+        color: rgb(34, 34, 34);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px; 
+        border-bottom: 1px solid rgb(226, 226, 226);
+        padding-bottom: 21px;
+        padding-top: 12px;
+        padding-right: 37px;
+        padding-left: 153px;
+
+    }
+
+    &__grandSpan {
+        padding-left: 15px;  
+    }
+
+    &__button {
+        color: rgb(255, 255, 255);
+        background: #F16D7F;
+        border: none;
+        padding: 15px 43px 16px 41px;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 42px;
+    }
+
+
+}
+
+.navButtons {
+    display: flex;
+    align-items: center;
+    gap: 192px;
+    padding-top: 72px;
+    
+    &__clear {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        padding: 17px 41px 16px 39px;
+        border: 1px solid rgb(164, 164, 164);
+    }
+
+    &__continue {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        padding: 17px 41px 16px 39px;
+        border: 1px solid rgb(164, 164, 164);
+    }
+
+    &__clear:hover {
+        background: $colorSelectSite;
+        transition: 0.5s;
+    }
+
+    &__continue:hover {
+       background: $colorSelectSite;
+       transition: 0.5s;
+    }
+}
+
+.footer {
+    background: #222;
+    margin-top: 128px;
+}
+
+.footerInfo {
+        &_Background {
+            background: url(./img/Layer\ 41.svg);
+            height: 448px;
+            background-size: cover;
+        }
+        &_Layer {
+            background: url(./img/Rectangle\ 26.svg);
+            height: 448px;
+            background-size: cover;
+        }
+        &__radiusPhoto {
+            border-radius: 50%;
+            
+        }
+        &__bothSide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 327px;
+            padding-top: 50px;
+        }
+        &__fig {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__footerInfo_LeftSide{
+            display: flex;
+            text-align: center;
+        }
+        &__LeftSide h2{
+            color: rgb(34, 34, 36);
+            font-style: italic;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-top: 30px;
+        }
+        &__LeftSide span {
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center; 
+        }
+        &__form {
+            display: flex;
+            margin-top: 32px;
+            padding-left: 10px;
+        }
+        &__RightSide h2{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 40.13px;
+            text-align: center;
+            
+        }
+        &__RightSide h3 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30.1px;
+            text-align: center;
+            
+        }
+        &__radiusInput {
+            border-radius: 20px 0 0 20px;
+            padding: 7px 64px 6px 22px;
+            display: block;
+            border: none;
+            background: rgb(225, 225, 225);
+        }
+        &__infoBtn {
+            background: rgb(241, 109, 127);
+            color: rgb(255, 255, 255);
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: center;
+            padding: 7px 7px 6px 8px;
+            border-radius: 0 20px 20px 0;
+            display: block;
+            border: none;
+        
+        }
+}
+
+.endPage {
+    display: flex;
+    align-items: center; 
+    gap: 655px;
+    
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+   
+    
+}
+
+.pinterest button {
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+    border: none;
+    background-color: white;
+}
+.twitter button {
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+    border: none;
+    background-color: white;
+}
+.footerAddress{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(251, 251, 251);
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 251px;
+}
